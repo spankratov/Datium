@@ -16,6 +16,7 @@ var operation;              //фиксирует операцию для вып�
 
 var addNumber = function(i){
     current = current * 10 + i;
+    document.getElementById("editWide").value = current;
 };
 var setOperation = function(key){           //действует когда нажимаем на знак + - * /
     operation = key;
@@ -26,7 +27,7 @@ var setOperation = function(key){           //действует когда на
 var result = function(){
     //alert(firstArgument + ' = ' + typeof(firstArgument) + ' ' + current + ' = ' + typeof(current));
     if(operation === undefined){        //если не нажималась кнопка операции
-        alert(current);
+        document.getElementById("editWide").value = firstArgument;
     }
     else{
        switch(operation) {               //производим необходимые операции, записываем результат в current
@@ -43,7 +44,7 @@ var result = function(){
                firstArgument /= current;
                break;
        }
-        alert(firstArgument);
+        document.getElementById("editWide").value = firstArgument;
         operation = undefined;
         current = 0;
     }
