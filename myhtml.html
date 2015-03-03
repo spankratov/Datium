@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <title>Мой калькулятор</title>
+    <style type = "text/css">
+
+        #number
+        {
+            padding:10px;
+            color:midnightblue;
+            border:1px black solid;
+            display:inline;
+            text-align:center;
+            background-color:beige;
+            cursor:pointer;
+        }
+    </style>
+
+    <script type = "text/javascript" src = "myscript.js"></script>
+
+</head>
+<body>
+    <input id="editWide" name="ReadOut" type="Text" size=50 value="0" width="250px">
+    <script>
+        document.write('</br>');
+        for(var i = 7; i <= 9; i++){
+            document.write(' <button id="number" onclick="addNumber(' + i + ')">' + i + '</button>');
+        }
+        document.write('</br>');
+        for(var i = 4; i <= 6; i++){
+            document.write(' <button id="number" onclick="addNumber(' + i + ')">' + i + '</button>');
+        }
+        document.write('</br>');
+        for(var i = 1; i <= 3; i++){
+            document.write(' <button id="number" onclick="addNumber(' + i + ')">' + i + '</button>');
+        }
+        document.write(' <button id="number" onclick="addNumber(0)">' + 0 + '</button>');
+
+        document.write('<button id="sign" onclick="setOperation(Operations.addition)">' + '+' + '</button>');
+        document.write('<button id="sign" onclick="setOperation(Operations.subtraction)">' + '-' + '</button>');
+        document.write('<button id="sign" onclick="setOperation(Operations.multiply)">' + '*' + '</button>');
+        document.write('<button id="sign" onclick="setOperation(Operations.division)">' + '/' + '</button>');
+
+
+
+
+
+
+    </script>
+    <button id='number' onclick='result()'> = </button>
+
+
+</body>
+</html>
