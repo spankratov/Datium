@@ -1,32 +1,49 @@
 @import "bootstrap/bootstrap.less";
 @import "variables.less";
-/*текст кнопок такой же как весь текст*/
-.btn {
-  font-family: @brand-font;
+
+/*ERR!!!!!!!!!!doesn't work*/
+body{
+  background: linear-gradient(top-left #5d5996 #e36f72 #5d5996);
 }
 
+/*big title="Datium"*/
 h1{
   margin-left: 20px;
 }
-img{
-  width: 150px;
-  height: 150px;
+
+/*avatar can't be extra large*/
+img[name="avatar"]{
+  max-width: 150px;
+  max-height: 150px;
 }
+
 div[name="mainContent"]{
+  /*big dark background rectangle*/
+  /*ERR!!!!!set border-radius*/
   background: url(../../www/images/sample40.png);
-  width: 100%;
-  height: 200px;
+  /*width: 100%;*/
+  height: 210px;
 }
 
 div[name="ID"]{
+  /*форматирование для Имени Фамилии*/
   h3[name="userName"]{
     color: #fe5859;
     font-size: 16px;
     text-align: center;
   }
 }
+
+/**/
 div[name="Menu"]{
+  color: #efc8ec; /*ERR!!!!!не работает*/
   li{
     text-align: center;
   }
+}
+
+/*отступы для изображения календаря*/
+.calendar{
+  margin: 20px;
+  /*margin-top: 30px;*/
 }

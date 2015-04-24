@@ -1,39 +1,26 @@
 /*основной шрифт страницы*/
 @brand-font: Roboto Light ;
 /* фон страницы*/
-@body-bg:  #d37e81 ;
-/*специфический голубой фон данного дизайна*/
-@brand-primary: #fff;
-/*фон панелей*/
-@panel-bg: url(../../www/images/sample40.png);
-/*цвет рамки панелей*/
-@panel-inner-border: #e7e7e7;
-/* скругление у блоков*/
-@border-radius-base: 3;
-/*первичные кнопки имеют голубой фон*/
-@btn-primary-bg: @brand-primary;
+@body-bg:  #d37e81;
+/*цвет пунктов меню*/
+@brand-primary: #efc8ec;
 /*если ширина экрана больше 992px, то ширина контейнера 960px*/
-/*@container-md: 960px;*/
+@container-xs: 300px;
 /*если ширина экрана больше 1200px, то ширина контейнера так же 960px*/
 /*@container-lg: @container-md;*/
-/*основным шрифтом будет Tahoma*/
+/*ERR!!!!!!основной шрифт -- зачем, если указано выше*/
 @font-family-base: Roboto Light ;
 /*задаем базовый размер*/
 @font-size-base: 18px;
 /*основной цвет текста на странице*/
 @text-color: #fff;
 
-/*высота навигационного меню*/
-@navbar-height: 37px;
-/*задаем  побольше горизонтальный отступ*/
-@nav-link-padding: 10px 30px;
-/*фон для пунктов меню*/
-/*@navbar-default-bg: none;*/
-/*цвет текста в пунктах меню*/
-@navbar-default-link-color: #dbd1dc;
-/*а при наведении мышки – темнее*/
-@navbar-default-link-hover-color: #f00;
-/*фон активного пункта меню – наш специфический голубой цвет*/
-@navbar-default-link-active-bg: transparent;
-/*цвет текста активного пункта меню*/
-@navbar-default-link-active-color: #fff;
+/* навигационное меню*/
+/*прозрачный фон у всех пунктов*/
+@navbar-default-bg: transparent;    /*неактивная без курсора*/
+@nav-pills-active-link-hover-bg: transparent; /*активная кнопка*/
+@nav-link-hover-bg: transparent;    /*под курсором*/
+/*ERR!!!!! doesn't work*/
+@nav-pills-height: 40px;
+/*цвет текста активной кнопки*/
+@nav-pills-active-link-hover-color: #fff;
